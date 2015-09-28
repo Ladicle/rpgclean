@@ -1,4 +1,3 @@
 * RPG-Clean
 お掃除をちょっとおもしろくするためのもの
 [[http://ladicle.github.io/rpgclean/][これを]] AndroidのWebViewから開いています
-

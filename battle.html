@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>RPGClean(BATTLE)</title>
+  </head>
+  <body>
+    <script src='https://cdn.mlkcca.com/v2.0.0/milkcocoa.js'></script>
+    <script>
+    var ary = ['punch','punch','punch','punch','coin','punch','punch','coin','punch'];
+    var cocoa = new MilkCocoa("dogiest1m63.mlkcca.com");
+    var punchStore = cocoa.dataStore('punch');
+    var xmlHttp = new XMLHttpRequest();
+	    
+    punchStore.on('push', function(pushed) {
+	    var random = ary[Math.floor(Math.random() * ary.length)];
+	    xmlHttp.open("GET", 'http://localhost:3000/' + random);
+	    xmlHttp.send();
+    });
+    </script>
+  </body>
+</html>
